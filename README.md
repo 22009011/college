@@ -47,7 +47,7 @@ The College Management System is a web application built using the MERN stack th
 ### Setup
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-repo/college-management.git
+   https://github.com/22009011/college.git
    cd college-management
    ```
 
