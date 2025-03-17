@@ -1,0 +1,44 @@
+.contact-teachers {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.contact-teachers h2 {
+  text-align: center;
+  color: #333;
+}
+
+.teacher-list {
+  list-style: none;
+  padding: 0;
+}
+
+.teacher-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.teacher-item:last-child {
+  border-bottom: none;
+}
+
+.teacher-name,
+.teacher-email,
+.teacher-phone {
+  flex: 1;
+  text-align: center;
+}
+
+.teacher-name {
+  font-weight: bold;
+}
+
+.teacher-email {
+  color: #555;
+}

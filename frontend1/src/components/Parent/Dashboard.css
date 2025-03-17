@@ -1,0 +1,37 @@
+.dashboard {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+  }
+  
+  .dashboard h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .dashboard-actions {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .dashboard-actions button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .dashboard-actions button:hover {
+    background-color: #45a049;
+  }
+  
+  .chart-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  

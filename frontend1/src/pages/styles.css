@@ -1,0 +1,124 @@
+/* Base styles */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Custom styles */
+.mobile-menu {
+  display: none;
+}
+
+.mobile-menu.active {
+  display: block;
+}
+
+/* Additional custom styles for improved aesthetics */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Override default link behavior */
+a {
+  text-decoration: none;
+}
+
+/* Custom animation for hover effects */
+.transition {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+/* Custom styles for responsiveness */
+@media (max-width: 768px) {
+  .mobile-menu {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    background-color: white;
+    padding: 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+  
+  .mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .mobile-menu ul li a {
+    display: block;
+    padding: 0.5rem 0;
+    color: #4B5563;
+    font-weight: 500;
+  }
+  
+  .mobile-menu ul li a:hover {
+    color: #4F46E5;
+  }
+  
+  .mobile-menu .auth-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 1rem;
+  }
+  
+  .mobile-menu .auth-buttons a {
+    display: block;
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 0.375rem;
+    font-weight: 500;
+  }
+  
+  .mobile-menu .auth-buttons a:first-child {
+    color: #4B5563;
+  }
+  
+  .mobile-menu .auth-buttons a:last-child {
+    background-color: #4F46E5;
+    color: white;
+  }
+}
+
+/* Gradient background for various sections */
+.bg-gradient-blue {
+  background: linear-gradient(135deg, #4F46E5 0%, #818CF8 100%);
+}
+
+/* Enhancement for cards and interactive elements */
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Focus styles for better accessibility */
+button:focus, a:focus {
+  outline: 2px solid #818CF8;
+  outline-offset: 2px;
+}
+
+/* Additional animations for page elements */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* Improve image display */
+img {
+  max-width: 100%;
+  height: auto;
+}
